@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "sessionid",
+  "version": "1.0.0",
+  "name": "Session ID Connect",
+  "description": "Adds a Session ID button to the multiplayer screen for quick token-based server connections.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+
+  "environment": "client",
+
+  "entrypoints": {
+    "client": ["com.sessionid.SessionIdMod"]
+  },
+
+  "mixins": [
+    "sessionid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  }
+}
